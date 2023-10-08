@@ -6,7 +6,7 @@ metadata:
   name: manager-role
 rules:
 - apiGroups:
-  - ks.cloud.cmft.ks.cloud.cmft
+  - ""
   resources:
   - namespaces
   verbs:
@@ -18,13 +18,13 @@ rules:
   - update
   - watch
 - apiGroups:
-  - ks.cloud.cmft.ks.cloud.cmft
+  - ""
   resources:
   - namespaces/finalizers
   verbs:
   - update
 - apiGroups:
-  - ks.cloud.cmft.ks.cloud.cmft
+  - ""
   resources:
   - namespaces/status
   verbs:
