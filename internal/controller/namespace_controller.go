@@ -82,7 +82,9 @@ func LabelTuner(key string, namespace *corev1.Namespace) (*corev1.Namespace, boo
 	}
 
 	modfiy := false
-
+// 1、Annotations不存在，Labels存在，删除
+// 2、Annotations存在，Labels存在且值与Annotations一致，跳过
+// 3、Annotations存在，Labels存在且值与Annotations不一致，将Annotations的值赋给Labels
 	if _, ok := namespace.Annotations[key]; !ok {
 		if _, ok := namespace.Labels[key]; ok {
 			delete(namespace.Labels, key)
