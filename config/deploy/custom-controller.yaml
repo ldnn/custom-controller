@@ -1,4 +1,4 @@
-// 部署前请将存量的感兴趣NS标签复制到注解上。切记，切记！！！
+# 部署前请将存量的感兴趣NS标签复制到注解上。切记，切记！！！
 apiVersion: v1
 kind: ServiceAccount
 metadata:
